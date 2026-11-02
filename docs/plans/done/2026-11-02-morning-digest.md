@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-02
 ---
 
 # Morning digest
@@ -77,3 +78,17 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Run log reader | — | kilo · <model> · medium | 2026-11-02 |
+| 2 | Digest page GET /digest/:night | #1 | kilo · <model> · low | 2026-11-02 |
+| 3 | Digest JSON /api/digest/:night | #1 | kilo · <model> · low | 2026-11-02 |
+| 4 | Board link | #1, #2 | kilo · <model> · low | 2026-11-02 |
+| 5 | Route tests | #2, #3 | kilo · <model> · low | 2026-11-02 |
+| 6 | Preview for review | #2 | kilo · <model> · low | 2026-11-02 |
+| 7 | Clean up | #6 | kilo · <model> · low | 2026-11-02 |
+
+Preview: https://hajpson.github.io/rig-handover-before-i-looked/ (marker removed after review, ADR 0003).
